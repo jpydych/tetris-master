@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: calc(100vh - 10vh);
+
+  padding-bottom: 10vh;
+}
+
+/* Layout utilities */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+
+.position-absolute { position: absolute; }
+.left-4 { left: min(4vw, 4vh); }
+.top-4 { top: min(4vw, 4vh); }
+
+/* Spacing */
+.gap-2 { gap: 0.5rem; }
+.gap-4 { gap: 1rem; }
+.p-2 { padding: 0.5rem; }
+.p-4 { padding: 1rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
+/* Typography */
+.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+.font-bold { font-weight: 700; }
+.text-white { color: white; }
+.text-red-500 { color: rgb(239, 68, 68); }
+
+/* Borders */
+.border { border: 1px solid; }
+.border-none { border-style: none; }
+.border-4 { border-width: 4px; }
+.border-gray { border-color: #374151; }
+.rounded { border-radius: 0.25rem; }
+
+/* Dimensions */
+.w-6 { width: 1.5rem; }
+.h-6 { height: 1.5rem; }
+
+/* Backgrounds */
+.bg-gray { background-color: #111827; }
+.bg-blue { background-color: #3B82F6; }
+.bg-blue:hover { background-color: #2563eb; }
+
+/* Game utilities */
+#score-counter {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 32px;
+  font-weight: 300;
+}
